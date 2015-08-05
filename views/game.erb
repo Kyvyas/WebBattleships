@@ -1,0 +1,25 @@
+<div>
+  
+    <pre><%= $GAME.own_board_view $GAME.player_1 %></pre>
+ 
+
+     <p>Please place a ship</p>
+      <form action="/New_Game" method="post">
+        <input type="hidden" name="name" value=<%= @name %>> 
+        Ship: <select name="ship">
+          <option name="ship" value="submarine">Submarine</option>
+          <option name="ship" value="destroyer">Destroyer</option>
+          <option name="ship" value="cruiser">Cruiser</option>
+          <option name="ship" value="battleship">Battleship</option>
+          <option name="ship" value="aircraft_carrier">Aircraft Carrier</option>
+        </select>
+        Coordinates: <input type="text" name="coordinates" >
+        Orientation: <!-- <input type="text" name="orientation" > -->
+
+        <select name="orientation">
+          <option name="orientation" value="vertically">Vertical</option>
+          <option name="orientation" value="horizontally">Horizontal</option>
+        </select>
+
+        <input type="submit" value="Place ship">
+    </form>
