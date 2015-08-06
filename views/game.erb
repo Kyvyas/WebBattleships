@@ -4,7 +4,7 @@
  
 
      <p>Please place a ship</p>
-      <form action="/New_Game" method="post">
+      <form action="/game" method="post">
         <input type="hidden" name="name" value=<%= @name %>> 
         Ship: <select name="ship">
           <option name="ship" value="submarine">Submarine</option>
@@ -14,7 +14,7 @@
           <option name="ship" value="aircraft_carrier">Aircraft Carrier</option>
         </select>
         Coordinates: <input type="text" name="coordinates" >
-        Orientation: <!-- <input type="text" name="orientation" > -->
+        Orientation: 
 
         <select name="orientation">
           <option name="orientation" value="vertically">Vertical</option>

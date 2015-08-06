@@ -21,7 +21,7 @@ Feature: Starting the game
     Then I should see "Please enter your name"
 
     Given I am on "Register"
-    When I fill in "name" with "gaby"
+    When I fill in "name" with "Katya"
     Then I press "Submit"
     When I follow "Play Game"
     Then I should be on "/game"

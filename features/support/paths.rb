@@ -13,9 +13,6 @@ module NavigationHelpers
     when /the home\s?page/
       '/'
 
-    when /Register/
-      '/register'
-
     when /game/
       '/game'
 
