@@ -10,8 +10,10 @@ class BattleshipsWeb < Sinatra::Base
   $GAME = Game.new(Player, Board)
 
   get '/' do
-    @name = params[:name]
-    session[:name] = @name
+    # @name = params[:name]
+    # puts @name
+    # session[:name] = @name
+    # puts session[:name]
     if $GAME
       session[:player] = 'player_2'
     else
@@ -20,10 +22,12 @@ class BattleshipsWeb < Sinatra::Base
     erb :index
   end
 
-  get '/game' do
+  post '/game' do
     $GAME
     @name = params[:name]
-   
+    puts @name
+    # @name = session[:name]
+
     erb :game
   end
 

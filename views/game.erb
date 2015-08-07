@@ -1,6 +1,6 @@
 <div>
   
-    <h1>Player 1: <% session[:name] %> </h1>
+    <h1>Player 1: <%=@name%> </h1>
     <pre><%= $GAME.own_board_view $GAME.player_1 %></pre>
      <p>Please place a ship</p>
       <form action="/game" method="post">

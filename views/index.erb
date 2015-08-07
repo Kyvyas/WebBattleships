@@ -9,21 +9,14 @@
 </div>
 
 <div style="text-align: center">
-  <% if !@name || @name == "" %> 
-    <form action="/">
+
+    <form action="/game" method="post">
       <p>What's your name?</p>
       <input type="text" name="name">
       <input type="submit" value="Submit">
     </form>
     <p>Please enter your name</p>
-  <% else %>
-    <p style="font-family:arial; font-size:24px">
-      Let's play Battleships, <%= session[:name] %>!
-    </p>
-    <p>
-       <a href="/game">Play Game</a>
-    </p>  
-  <% end %>
+  
 </div>
 
 </body>
