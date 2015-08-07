@@ -1,4 +1,5 @@
 <head>
+  <title>BattleShips - Return of the Boat</title>
 </head>
 
 <body>
@@ -17,7 +18,7 @@
     <p>Please enter your name</p>
   <% else %>
     <p style="font-family:arial; font-size:24px">
-      Let's play Battleships, <%= @name %>!
+      Let's play Battleships, <%= session[:name] %>!
     </p>
     <p>
        <a href="/game">Play Game</a>

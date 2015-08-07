@@ -1,8 +1,7 @@
 <div>
   
+    <h1>Player 1: <% session[:name] %> </h1>
     <pre><%= $GAME.own_board_view $GAME.player_1 %></pre>
- 
-
      <p>Please place a ship</p>
       <form action="/game" method="post">
         <input type="hidden" name="name" value=<%= @name %>> 
@@ -22,4 +21,8 @@
         </select>
 
         <input type="submit" value="Place ship">
+    </form>
+
+    <form action="/play" method="post">
+      <input type="submit" value="Start Game">
     </form>
